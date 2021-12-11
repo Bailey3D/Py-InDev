@@ -7,21 +7,22 @@ def readme():
 
 
 setup(
-    name="minidelegate",
+    name="indev",
     version="0.0.1",
-    description="Package for delegate based methods via decorators",
+    description="Package containing some basic developer helpers",
+    long_description=readme(),
     classifiers=[
         "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    keywords="developer delegate helpers decorators",
-    url="https://github.com/BhMbOb/Py-Delegate",
+    keywords="developer indev helpers todo decorators",
+    url="https://github.com/BhMbOb/Py-InDev",
     author="Bailey3D",
     author_email="contact@bailey3d.com",
     license="MIT",
-    packages=["delegate"],
+    packages=["indev"],
     install_requires=[],
     include_package_data=True,
     zip_safe=False
