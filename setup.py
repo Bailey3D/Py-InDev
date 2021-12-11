@@ -1,20 +1,29 @@
-import setuptools
+from setuptools import setup
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
 
-setuptools.setup(
+def readme():
+    with open("README.rst") as f:
+        return f.read()
+
+
+setup(
     name="indev",
     version="0.0.1",
-    author="Bailey3D",
-    author_email="contact@bailey3d.com",
-    description="Package containing basic development based stuff",
-    long_description=long_description,
-    url="https://github.com/BhMbOb/Py-InDev",
-    packages=setuptools.find_packages(),
+    description="Package containing some basic developer helpers",
+    long_description=readme(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    keywords="developer indev helpers todo decorators",
+    url="https://github.com/BhMbOb/Py-InDev",
+    author="Bailey3D",
+    author_email="contact@bailey3d.com",
+    license="MIT",
+    packages=["indev"],
+    install_requires=[],
+    include_package_data=True,
+    zip_safe=False
 )
