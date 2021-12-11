@@ -1,9 +1,12 @@
-InDev
+MiniDelegate
 --------
-Python package for basic development helpers
+Simple python module to add a delegate decorator type
 
-    >>> import indev.decorators
-    >>> 
-    >>> @indev.decorators.todo("This is an example of a TODO!")
+    >>> @delegate
     >>> def foo():
-    >>>     pass
+    >>>   print("Foo")
+    >>> 
+    >>> def bar():
+    >>>   print("Bar")
+    >>> 
+    >>> foo.bind(bar)
